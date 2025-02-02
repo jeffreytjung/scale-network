@@ -102,7 +102,13 @@ in
         ];
       };
     };
-
+    loki = {
+      enable = true;
+      configuration = {
+        enable = true;
+        configFile = ./loki-local-config.yaml;
+      );
+    );
     nginx = {
       enable = false;
       # TODO: TLS enabled
